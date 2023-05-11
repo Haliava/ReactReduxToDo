@@ -1,0 +1,32 @@
+.tableEntry {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.tableEntryInner {
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.todoCheckbox {
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+}
+
+.entryTextDiv > p {
+    margin: 0;
+}
+
+.crossOut {
+    text-decoration: line-through;
+}

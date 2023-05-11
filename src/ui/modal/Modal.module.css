@@ -1,0 +1,67 @@
+.modal {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.modal.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modalContent {
+    overflow: auto;
+
+    background-color: #fefefe;
+    margin: auto;
+    padding: 40px 20px;
+    border: 1px solid #888;
+    border-radius: 15px;
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalForm {
+    font-size: larger;
+    
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 2fr 6fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: left;
+}
+
+.modalFormLabel {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.modalFormCheckbox {
+    margin: 0;
+    width: 30px;
+    display: grid;
+}
+
+.modalFormButton {
+    cursor: pointer;
+    padding: 10px;
+    text-transform: uppercase;
+    grid-column: 1/-1;
+}

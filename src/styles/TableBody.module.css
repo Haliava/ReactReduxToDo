@@ -1,0 +1,8 @@
+.tableBody {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(236,237,246);
+    border-radius: 15px;
+}
